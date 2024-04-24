@@ -44,7 +44,7 @@ from bot.plugins.call_back_button_handler import button
 sudo_users = "6691641006" 
 crf.append("28")
 codec.append("libx264")
-resolution.append("854x480")
+resolution.append("1920x1080")
 preset.append("veryfast")
 audio_b.append("35k")
 # 🤣
