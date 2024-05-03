@@ -88,7 +88,7 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Owner', url='https://t.me/Its_Oreki_Hotarou')
+                    InlineKeyboardButton('AnimeX Horizon', url='https://t.me/AnimeX_Horizon')
                 ]
             ]
         ),
