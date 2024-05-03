@@ -46,10 +46,10 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
      ## lol 😂
     crf.append("28")
     codec.append("libx264")
-    resolution.append("1920x1080")
+    resolution.append("854x480")
     preset.append("veryfast")
-    audio_b.append("35k")
-    file_genertor_command =  f"ffmpeg -hide_banner -loglevel quiet -progress '{progress}' -i '{video_file}' -metadata 'title=' -c:v {codec[0]}  -map 0 -crf {crf[0]} -c:s copy -pix_fmt yuv420p -s {resolution[0]} -b:v 150k -c:a libopus -b:a {audio_b[0]} -preset {preset[0]} -metadata:s:v 'title=' -metadata:s:a 'title=' -metadata:s:s 'title=' '{out_put_file_name}' -y"
+    audio_b.append("48k")
+    file_genertor_command =  f"ffmpeg -hide_banner -loglevel quiet -progress '{progress}' -i '{video_file}' -metadata 'title=Encoded by @AnimeX_Horizon' -c:v {codec[0]}  -map 0 -crf {crf[0]} -c:s copy -pix_fmt yuv420p -s {resolution[0]} -b:v 150k -c:a libopus -b:a {audio_b[0]} -preset {preset[0]} -metadata:s:a 'title=@AnimeX_Horizon' -metadata:s:s 'title=@AnimeX_Horizon' '{out_put_file_name}' -y"
  #Done !!
     COMPRESSION_START_TIME = time.time()
     process = await asyncio.create_subprocess_shell(
