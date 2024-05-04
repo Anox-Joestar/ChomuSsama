@@ -2,16 +2,16 @@ from bot.get_cfg import get_config
 
 
 class Localisation:
-    START_TEXT = "Hi, \n\nThis is a Encoder Bot. \n\nOwner : @About_Ben"
+    START_TEXT = "Hi, \n\nThis is a Encoder Bot. \n\nOwner : @Kizoshuka"
    
     ABS_TEXT = " Please don't be selfish."
     
     FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
     
     
-    DOWNLOAD_START = "🛡️𝘋0𝘸𝘕𝘓0𝘈𝘋𝘪𝘕𝘨 ▦▩▤▥▧■\n"
+    DOWNLOAD_START = "🕹𝘋0𝘸𝘕𝘓0𝘈𝘋𝘪𝘕𝘨 ▦▩▤▥▧■\n"
     
-    UPLOAD_START = "📣𝙐𝙥𝙇𝟎𝘼𝙙𝙞𝙉𝙜 ▦▩▤▥▧■\n"
+    UPLOAD_START = "🤡𝙐𝙥𝙇𝟎𝘼𝙙𝙞𝙉𝙜 ▦▩▤▥▧■\n"
     
     COMPRESS_START = "𝙀𝙣𝙘𝙤𝙙𝙚 𝙝𝙤 𝙧𝙝𝙖 𝙍*𝙉𝘿🔪"
     
@@ -19,7 +19,7 @@ class Localisation:
     
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations."
     
-    COMPRESS_SUCCESS = "Encoded by @Adult_Horizon"
+    COMPRESS_SUCCESS = "Encoded by @YourMom"
 
     COMPRESS_PROGRESS = "🕛 ETA: {} ♻️ Progress: {}%"
 
