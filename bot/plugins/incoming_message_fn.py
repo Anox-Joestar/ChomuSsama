@@ -88,7 +88,7 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('AnimeX Horizon', url='https://t.me/AnimeX_Horizon')
+                    InlineKeyboardButton('Join Kar Chakke', url='https://t.me/Anime_State')
                 ]
             ]
         ),
