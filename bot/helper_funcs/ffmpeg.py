@@ -70,7 +70,7 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     if resolution[0] == "1920x1080":
         kk = re.sub(r'(HDRip)', '1080p', kk)
     
-    out_put_file_name = kk.replace(f".{aa}", "@AnimeX_Horizon].mkv")
+    out_put_file_name = kk.replace(f".{aa}", "@Anime_State].mkv")
 
         #out_put_file_name = video_file + "_compressed" + ".mkv"
     progress = output_directory + "/" + "progress.txt"
@@ -80,11 +80,11 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     ##"-metadata", "title=@SenpaiAF", "-vf", "drawtext=fontfile=njnaruto.ttf:fontsize=20:fontcolor=black:x=15:y=15:text=" "Dark Encodes",
      ## -vf eq=gamma=1.4:saturation=1.4
      ## lol 😂
-    crf.append("21")
+    crf.append("22")
     codec.append("libx264")
     resolution.append("1920x1080")
     preset.append("veryfast")
-    audio_b.append("128k")
+    audio_b.append("96k")
     file_genertor_command =  f"ffmpeg -hide_banner -loglevel quiet -progress '{progress}' -i '{video_file}' -metadata 'title=Encoded by Anime State' -c:v {codec[0]}  -map 0 -crf {crf[0]} -c:s copy -pix_fmt yuv420p -s {resolution[0]} -b:v 150k -c:a libopus -b:a {audio_b[0]} -preset {preset[0]} -metadata:s:a 'title=Anime State' -metadata:s:s 'title=Anime State' '{out_put_file_name}' -y"
  #Done !!
     COMPRESSION_START_TIME = time.time()
